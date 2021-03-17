@@ -5,13 +5,13 @@ int JumpingCloud(vector<int> c){
 
     int count=0;
     int start=0;
-    while(start!=c.size()-1){
+    while(start<c.size()-1){
 
         if(c[start+2]==0){
             count++;
             start = start+2;
         }
-        else if(c[start+1]==1){
+        else if(c[start+1]==0){
             start++;
             count++;
         }
